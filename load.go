@@ -7,7 +7,7 @@ import (
 
 func main() {
 	CPUCount := runtime.NumCPU()
-	fmt.Printf("Loading all %d logical processors\n", CPUCount)
+	fmt.Printf("Loading %d logical processors\n", CPUCount)
 	for i := 0; i < CPUCount-1; i++ {
 		go func() {
 			for {
